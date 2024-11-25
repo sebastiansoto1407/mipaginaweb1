@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros - Tienda SotoFreakin1407</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a0b46, #360a8b);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #2e006a;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .header .logo img {
+            max-height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            max-width: 400px;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: #250364;
+            color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-bar input::placeholder {
+            color: #bbbbbb;
+        }
+
+        .login-register {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .login-register a {
+            color: #ff007b;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .login-register a:hover {
+            color: #e6006e;
+            transform: translateY(-2px);
+        }
+
+        .about-section {
+            padding: 60px 20px;
+            background-color: #22034c;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 40px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            color: #ffd700;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #dddddd;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .team-section {
+            padding: 60px 20px;
+            background: #1a0b46;
+            border-top: 5px solid #ff007b;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            color: #ffd700;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member h5 {
+            color: #ffd700;
+            margin-top: 15px;
+        }
+
+        .team-member p {
+            color: #bbbbbb;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            background-color: #250364;
+            padding: 20px;
+            text-align: center;
+            color: #bbbbbb;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #ff007b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #e6006e;
+        }
+
+        .btn-home {
+        background-color: #1a0b46; /* Cambia el fondo a un color oscuro */
+        color: #ffd700; /* Cambia el color del texto a dorado para que resalte */
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-home:hover {
+        background-color: #250364; /* Fondo más claro al pasar el ratón */
+        transform: translateY(-2px);
+    }
+    @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .quotes-section {
+                padding: 40px 15px;
+                margin: 20px;
+            }
+
+            .quotes-section h2 {
+                font-size: 2rem;
+            }
+
+            .form-control {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .btn-home {
+                margin-top: 10px;
+            }
+        }
+
+        /* Pantallas medianas (tabletas) */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .header {
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 15px 30px;
+            }
+
+            .quotes-section {
+                padding: 50px 20px;
+            }
+
+            .quotes-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .login-register {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+
+        /* Pantallas grandes (computadoras) */
+        @media (min-width: 901px) {
+            .quotes-section {
+                padding: 60px 40px;
+            }
+
+            .quotes-section h2 {
+                font-size: 2.5rem;
+            }
+        }
+    
+
+    
+        
+    </style>
+</head>
+<body>
+    <!-- Header Actualizado -->
+    <header class="header">
+        <div class="logo">
+            <img src="sffff.png" alt="Logo Eneba">
+        </div>
+        <h2 style="color: #ffd700; font-size: 1.8rem; text-align: center;">Bienvenidos</h2>
+        <div class="login-register" id="user-info">
+            <a href="proyecto.html" class="btn-home">Volver a Inicio</a>
+            <a href="iniciosesion.html" id="login-link">Iniciar sesión</a> | 
+            <a href="#" id="register-link">Registrarse</a>
+        </div>
+    </header>
+
+    <!-- Sección "Acerca de Nosotros" -->
+    <section class="about-section">
+        <div class="container">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos tu destino número uno para juegos digitales, ofreciendo las mejores ofertas en títulos populares, tarjetas de regalo y contenido exclusivo. Nuestro objetivo es proporcionarte una experiencia de compra rápida, segura y emocionante, para que puedas disfrutar de tus juegos favoritos sin complicaciones.</p>
+        </div>
+    </section>
+
+    <!-- Sección "Nuestro Equipo" -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-4 text-center team-member">
+                    <img src="https://via.placeholder.com/300" alt="Miembro del Equipo">
+                    <h5>Víctor Manuel Uribe</h5>
+                    <p>Fundador y CEO</p>
+                </div>
+                <div class="col-md-4 text-center team-member">
+                    <img src="https://via.placeholder.com/300" alt="Miembro del Equipo">
+                    <h5>Lucía Fernández</h5>
+                    <p>Directora de Marketing</p>
+                </div>
+                <div class="col-md-4 text-center team-member">
+                    <img src="https://via.placeholder.com/300" alt="Miembro del Equipo">
+                    <h5>Carlos Soto</h5>
+                    <p>Jefe de Desarrollo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Tienda SotoFreakin1407. Todos los derechos reservados. <a href="privacidad.html">Política de Privacidad</a></p>
+    </div>
+
+    <!-- Funcionalidad de Sesión -->
+    <script src="auth.js"></script>
+    <script src="jedi_survivor.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const loggedInUser = localStorage.getItem("loggedInUser");
+            const userInfo = document.getElementById("user-info");
+
+            if (loggedInUser) {
+                // Si el usuario ha iniciado sesión, muestra su nombre y un enlace para cerrar sesión
+                userInfo.innerHTML = `<a href="proyecto.html" class="btn-home">Volver a Inicio</a> | <span>Bienvenido, ${loggedInUser}</span> | <a href="#" onclick="logout()">Cerrar sesión</a>`;
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem("loggedInUser"); // Elimina el estado de la sesión
+    
+            // Vuelve a mostrar los enlaces "Iniciar sesión" y "Registrarse"
+            const userInfo = document.getElementById("user-info");
+            userInfo.innerHTML = `<a href="proyecto.html" class="btn-home">Volver a Inicio</a> | <a href="iniciosesion.html" id="login-link">Iniciar sesión</a> | <a href="#" id="register-link">Registrarse</a>`;
+        }
+    </script>
+
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

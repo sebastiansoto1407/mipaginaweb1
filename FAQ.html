@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes (FAQ) - Tienda SotoFreakin1407</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a0b46, #360a8b);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #2e006a;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .header .logo img {
+            max-height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .header .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        .login-register {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .login-register a {
+            color: #ff007b;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .login-register a:hover {
+            color: #e6006e;
+            transform: translateY(-2px);
+        }
+
+        .faq-section {
+            padding: 60px 20px;
+            background-color: #22034c;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 40px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .faq-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .faq-section h2 {
+            color: #ffd700;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        .accordion .card {
+            background-color: #360a8b;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .accordion .card-header {
+            background-color: #360a8b;
+            border: none;
+            color: #ffd700;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .accordion .card-header:hover {
+            background-color: #4b12b8;
+        }
+
+        .accordion .card-body {
+            background-color: #2e006a;
+            color: #dddddd;
+            padding: 15px;
+        }
+
+        .footer {
+            background-color: #250364;
+            padding: 20px;
+            text-align: center;
+            color: #bbbbbb;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #ff007b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #e6006e;
+        }
+
+        .btn-home {
+            background-color: #1a0b46;
+            color: #ffd700;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-home:hover {
+            background-color: #250364;
+            transform: translateY(-2px);
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Media Queries para Responsividad */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .faq-section {
+                padding: 40px 15px;
+                margin: 20px;
+            }
+
+            .faq-section h2 {
+                font-size: 2rem;
+            }
+
+            .btn-home {
+                margin-top: 10px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .header {
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 15px 30px;
+            }
+
+            .faq-section {
+                padding: 50px 20px;
+            }
+
+            .faq-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .login-register {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+
+        @media (min-width: 901px) {
+            .faq-section {
+                padding: 60px 40px;
+            }
+
+            .faq-section h2 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Actualizado -->
+    <header class="header">
+        <div class="logo">
+            <img src="sffff.png" alt="Logo Eneba">
+        </div>
+        <h2 style="color: #ffd700; font-size: 1.8rem; text-align: center;">Preguntas Frecuentes (FAQ)</h2>
+        <div class="login-register" id="user-info">
+            <a href="proyecto.html" class="btn-home">Volver a Inicio</a>
+            <a href="iniciosesion.html" id="login-link">Iniciar sesión</a> | 
+            <a href="#" id="register-link">Registrarse</a>
+        </div>
+    </header>
+
+    <!-- Sección "FAQ" -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faq1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        ¿Cómo compro un juego en la tienda?
+                    </div>
+                    <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Puedes comprar un juego navegando por nuestra tienda, añadiendo el juego al carrito y completando el proceso de pago. ¡Es rápido y sencillo!
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq2" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        ¿Qué métodos de pago aceptan?
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Aceptamos tarjetas de crédito, débito, y pagos a través de PayPal. También puedes pagar con tarjetas de regalo seleccionadas.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq3" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        ¿Cómo canjeo un código de juego?
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Puedes seguir nuestras guías de "Cómo Canjear un Código" para Steam, Epic Games y otras plataformas en la sección correspondiente.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq4" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        ¿Puedo devolver un juego digital?
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Las devoluciones de juegos digitales están sujetas a nuestras políticas de devolución. Revisa nuestra política de devoluciones para más detalles.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Tienda SotoFreakin1407. Todos los derechos reservados. <a href="privacidad.html">Política de Privacidad</a></p>
+    </div>
+
+    <!-- Funcionalidad de Sesión -->
+    <script src="auth.js"></script>
+    <script src="jedi_survivor.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const loggedInUser = localStorage.getItem("loggedInUser");
+            const userInfo = document.getElementById("user-info");
+
+            if (loggedInUser) {
+                // Si el usuario ha iniciado sesión, muestra su nombre y un enlace para cerrar sesión
+                userInfo.innerHTML = `<a href="proyecto.html" class="btn-home">Volver a Inicio</a> | <span>Bienvenido, ${loggedInUser}</span> | <a href="#" onclick="logout()">Cerrar sesión</a>`;
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem("loggedInUser"); // Elimina el estado de la sesión
+    
+            // Vuelve a mostrar los enlaces "Iniciar sesión" y "Registrarse"
+            const userInfo = document.getElementById("user-info");
+            userInfo.innerHTML = `<a href="proyecto.html" class="btn-home">Volver a Inicio</a> | <a href="iniciosesion.html" id="login-link">Iniciar sesión</a> | <a href="#" id="register-link">Registrarse</a>`;
+        }
+    </script>
+
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

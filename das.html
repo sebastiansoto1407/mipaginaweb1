@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tienda SotoFreakin1407</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Tienda SotoFreakin1407</div>
+        <nav class="nav">
+            <a href="proyecto.html">Inicio</a>
+            <a href="#">Juegos Baratos</a>
+            <a href="#">Ofertas Especiales</a>
+            <a href="#">Game Pass</a>
+            <a href="#">Soporte</a>
+        </nav>
+        <div class="user-options">
+            <a href="iniciosesion.html">Iniciar Sesión</a> | <a href="#">Registrarse</a>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <h1>Dashboard de Tienda SotoFreakin1407</h1>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2>Ventas Totales</h2>
+                <p>Bs. 50,000</p>
+            </div>
+            <div class="stat-card">
+                <h2>Usuarios Activos</h2>
+                <p>150</p>
+            </div>
+            <div class="stat-card">
+                <h2>Pedidos Pendientes</h2>
+                <p>30</p>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Gestión de Productos</h2>
+            <button class="btn-add">Agregar Producto</button>
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+                <tr>
+                    <td>Star Wars Jedi: Survivor</td>
+                    <td>Bs. 392.19</td>
+                    <td><button class="btn-edit">Editar</button> <button class="btn-delete">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Cyberpunk 2077</td>
+                    <td>Bs. 192.24</td>
+                    <td><button class="btn-edit">Editar</button> <button class="btn-delete">Eliminar</button></td>
+                </tr>
+                
+            </table>
+        </section>
+
+        <section class="users">
+            <h2>Usuarios Registrados</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Fecha de Registro</th>
+                </tr>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>juan@example.com</td>
+                    <td>2024-10-25</td>
+                </tr>
+                <tr>
+                    <td>Maria López</td>
+                    <td>maria@example.com</td>
+                    <td>2024-10-26</td>
+                </tr>
+                
+            </table>
+        </section>
+        <section class="dashboard">
+            <h2>Dashboard Administrativo</h2>
+    
+            <div class="metrics">
+                <div class="metric-card">
+                    <h3>Total de Ventas</h3>
+                    <p>1,245</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Usuarios Registrados</h3>
+                    <p>1,536</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Juegos Disponibles</h3>
+                    <p>324</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Ingresos (Bs)</h3>
+                    <p>52,870</p>
+                </div>
+            </div>
+    
+            <div class="graph-container">
+                <div class="graph">
+                    <h3>Ventas por Mes</h3>
+                    <img src="fc.avif" alt="Gráfico de ventas mensuales">
+                </div>
+                <div class="graph-center">
+                    <div class="graph">
+                        <h3>Nuevos Usuarios</h3>
+                        <img src="usuarios.png" alt="Gráfico de nuevos usuarios">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="auth.js"></script>
+    <script src="jedi_survivor.js"></script>
+    
+</body>
+</html>
